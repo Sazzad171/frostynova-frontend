@@ -1,14 +1,14 @@
 // navbar dropdown
 $('li.dropdown').hover(function() {
-$(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(100);
+$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(100);
 }, function() {
-$(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(100);
+$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
 });
 
 // nested dropdown
 function showNestedDropdown() {
-document.getElementById("nested-dropdown").style.display = "block";
-document.getElementById("nested-dropdown-icon").style.transform = "rotate(90deg)";
+	document.getElementById("nested-dropdown").style.display = "block";
+	document.getElementById("nested-dropdown-icon").style.transform = "rotate(90deg)";
 }
 function hideNestedDropdown() {
 	document.getElementById("nested-dropdown").style.display = "none";
@@ -24,9 +24,11 @@ function hideMobileDropdown() {
 }
 function showMobileNav() {
 	document.getElementById("full-mobile-nav").style.marginLeft = "0";
+	document.getElementById("overlay-mobile-nav").style.display = "block";
 }
 function hideMobileNav() {
 	document.getElementById("full-mobile-nav").style.marginLeft = "-500px";
+	document.getElementById("overlay-mobile-nav").style.display = "none";
 }
 
 // slick slider for company logo

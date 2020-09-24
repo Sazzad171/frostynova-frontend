@@ -17,6 +17,11 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
+      <!-- preloader start -->
+      <div class="loader_bg">
+        <div class="loader"></div>
+      </div>
+      <!-- preloader end -->
        <div class="body-wrappper position-relative">
          <!-- full header start -->
           <header class="position-absolute">
@@ -491,14 +496,24 @@
             </li>
           </ul>
         </div>
+        
+        <div class="overlay-for-mobile-nav" id="overlay-mobile-nav" onclick="hideMobileNav()"></div>
         <!-- navigation drawaer from left end -->
       </div>
-		
+    
 		<!-- JS here -->
         <script src="./assets/js/vendor/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="./assets/js/popper.min.js"></script>
         <script src="./assets/js/bootstrap.min.js"></script>
+
+        <!-- preloader js -->
+        <script>
+          $(window).on("load", function(){
+            $(".loader_bg").fadeOut("slow");
+          });
+        </script>
+
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/plugins/slick/slick.min.js"></script>
         <script src="./assets/js/all.js"></script>
