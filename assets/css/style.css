@@ -1841,6 +1841,16 @@ footer .footer-bottom p, footer .footer-bottom a {
   .about-us-footer .footer-middle {
     padding-top: 620px;
   }
+  .stream-directly .mobile-img {
+    right: -25px;
+    top: -20px;
+  }
+  .grow-and-maintain .img-fluid {
+    max-width: 60%;
+  }
+  .establish-yourself .img-fluid {
+    max-width: 60%;
+  }
 }
 
 /* big mobile :575px.  */
