@@ -1,8 +1,8 @@
 // navbar dropdown
 $('li.dropdown').hover(function() {
-$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(100);
+$(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(100);
 }, function() {
-$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
+$(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(100);
 });
 
 // nested dropdown
@@ -16,12 +16,14 @@ function hideNestedDropdown() {
 }
 
 // mobile navigation
-function showMobileDropdown() {
-	document.getElementById("mobile-dropdown").style.display = "block";
-}
-function hideMobileDropdown() {
-	document.getElementById("mobile-dropdown").style.display = "none";
-}
+$(".showMobileDropdown").click(function(){
+	$("#mobile-dropdown").toggle();
+});
+
+$(".nestedMobileDropdown").click(function(){
+	$(".nested-mobile-dropdown").toggle();
+});
+
 function showMobileNav() {
 	document.getElementById("full-mobile-nav").style.marginLeft = "0";
 	document.getElementById("overlay-mobile-nav").style.display = "block";
@@ -29,13 +31,15 @@ function showMobileNav() {
 function hideMobileNav() {
 	document.getElementById("full-mobile-nav").style.marginLeft = "-500px";
 	document.getElementById("overlay-mobile-nav").style.display = "none";
+	document.getElementById("mobile-dropdown").style.display = "none";
+	document.getElementById("nested-mobile-dropdown").style.display = "none";
 }
 
 // slick slider for company logo
 $('.responsive').slick({
 	dots: false,
 	infinite: true,
-	speed: 1100,
+	speed: 500,
 	slidesToShow: 4,
 	slidesToScroll: 1,
 	autoplay: true,

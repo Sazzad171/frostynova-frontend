@@ -1254,6 +1254,12 @@ header .nav-item a.dropdown-item:hover {
 }
 
 /* grow and maintain */
+.grow-and-maintain .img-col img {
+  -webkit-box-shadow: 0px 2px 10px -1px #0000002b;
+          box-shadow: 0px 2px 10px -1px #0000002b;
+  border-radius: 8px;
+}
+
 .grow-and-maintain .round-point {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00B1DD), to(#00F3FA));
   background-image: linear-gradient(180deg, #00B1DD, #00F3FA);
@@ -1263,6 +1269,12 @@ header .nav-item a.dropdown-item:hover {
 }
 
 /* establish yourself */
+.establish-yourself .img-col img {
+  -webkit-box-shadow: 0px 2px 10px -1px #0000002b;
+          box-shadow: 0px 2px 10px -1px #0000002b;
+  border-radius: 8px;
+}
+
 .establish-yourself .round-point {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00B1DD), to(#00F3FA));
   background-image: linear-gradient(180deg, #00B1DD, #00F3FA);
@@ -1717,7 +1729,7 @@ footer .footer-bottom p, footer .footer-bottom a {
   left: 0;
   bottom: 0;
   width: 260px;
-  background: #e8ffff;
+  background: #d5e2ff;
   z-index: 10001;
   overflow-y: scroll;
 }
@@ -1733,6 +1745,10 @@ footer .footer-bottom p, footer .footer-bottom a {
 }
 
 #mobile-dropdown {
+  display: none;
+}
+
+.nested-mobile-dropdown {
   display: none;
 }
 
@@ -1808,28 +1824,37 @@ footer .footer-bottom p, footer .footer-bottom a {
     overflow-y: hidden !important;
   }
   .mission-about .about-img {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .mission-about, .we-believe-about {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   .we-do-different-about {
     padding-top: 60px;
   }
   .we-do-different-about .banner-img {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .take-your-mission {
     padding: 100px 0 170px;
+  }
+  .about-banner {
+    padding-bottom: 60px;
+  }
+  .about-banner .content {
+    padding-top: 100px;
   }
 }
 
 /* small tablet :768px. */
 @media (max-width: 767px) {
-  .book-img {
+  .e-book .book-img {
     text-align: center;
     margin-top: 2rem !important;
+  }
+  .e-book .book-img img {
+    max-width: 60%;
   }
   footer {
     text-align: center;
@@ -1860,8 +1885,8 @@ footer .footer-bottom p, footer .footer-bottom a {
   }
   .home-banner .heading {
     font-size: 44px;
-    margin-bottom: 60px;
-    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-top: 30px;
     line-height: 60px;
   }
   .home-banner .title-label {

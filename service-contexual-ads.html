@@ -313,17 +313,24 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onmouseover="showMobileDropdown()" onmouseout="hideMobileDropdown()">Services <i class="fas fa-angle-right ml-2" id="nested-dropdown-icon"></i> </a>
+              <a class="nav-link showMobileDropdown" href="#">Services <i class="fas fa-angle-right ml-2" id="nested-dropdown-icon"></i> </a>
             </li>
             
-            <div id="mobile-dropdown" onmouseover="showMobileDropdown()" onmouseout="hideMobileDropdown()">
+            <div id="mobile-dropdown">
               <a class="dropdown-item mb-15" href="./service-display-advertising.html">Display Banners</a>
               <a class="dropdown-item mb-15" href="./service-native-advertising.html">Native Advertising</a>
               <a class="dropdown-item mb-15" href="./service-video-advertising.html">Video Advertising</a>
-              <a class="dropdown-item mb-15" href="./service-local-seo.html">Local SEO</a>
-              <a class="dropdown-item mb-15" href="./service-content-seo.html">Content SEO</a>
-              <a class="dropdown-item mb-15" href="./service-technical-seo.html">Technical SEO</a>
-              <a class="dropdown-item mb-15" href="./service-on-page-seo.html">On Page SEO</a>
+
+              <!-- nested dropdown start -->
+              <a class="nav-link nestedMobileDropdown" href="#">SEO <i class="fas fa-angle-right ml-2"></i> </a>
+              <div class="nested-mobile-dropdown" id="nested-mobile-dropdown">
+                <a class="dropdown-item mb-15" href="./service-local-seo.html">Local SEO</a>
+                <a class="dropdown-item mb-15" href="./service-content-seo.html">Content SEO</a>
+                <a class="dropdown-item mb-15" href="./service-technical-seo.html">Technical SEO</a>
+                <a class="dropdown-item mb-15" href="./service-on-page-seo.html">On Page SEO</a>
+              </div>
+              <!-- nested dropdown end -->
+
               <a class="dropdown-item mb-15" href="./service-native-advertising.html">Native Advertising</a>
               <a class="dropdown-item mb-15" href="./service-video-advertising.html">Video Advertising</a>
               <a class="dropdown-item mb-15" href="./service-search-ads.html">Search Ads</a>

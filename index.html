@@ -120,7 +120,7 @@
                   <div class="content row align-items-center">
                       <div class="col-lg-10 pb-200 pt-200">
                           <span class="title-label py-3 pl-3 text-uppercase">Sophisticated Digital Marketing For</span>
-                          <h1 class="heading mb-100 mt-60">Behavioral Treatment Providers</h1>
+                          <h1 class="heading mb-70 mt-60">Behavioral Treatment Providers</h1>
                           <h4 class="mb-40">Over 14 years of integrated marketing expertise</h4>
                           <button class="btn">Get a free consultation</button>
                       </div>
@@ -182,8 +182,8 @@
             <div class="row justify-content-center">
               <div class="col-lg-10">
                 <div class="row align-items-center">
-                  <div class="col-lg-6 mb-3 pr-lg-5 text-center">
-                    <img src="./assets/images/man.png" alt="" class="img-fluid rounded">
+                  <div class="img-col col-lg-6 mb-lg-3 mb-4 pr-lg-5 text-center">
+                    <img src="./assets/images/man.png" alt="" class="img-fluid">
                   </div>
                   <div class="col-lg-6 mb-3">
                     <h2 class="mb-20">Grow and maintain more predictable intake</h2>
@@ -274,8 +274,8 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-lg-6 mb-3 order-first order-lg-2 text-center">
-                    <img src="./assets/images/woman.png" alt="" class="img-fluid rounded">
+                  <div class="img-col col-lg-6 mb-lg-3 mb-4 order-first order-lg-2 text-center">
+                    <img src="./assets/images/woman.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -457,17 +457,24 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onmouseover="showMobileDropdown()" onmouseout="hideMobileDropdown()">Services <i class="fas fa-angle-right ml-2" id="nested-dropdown-icon"></i> </a>
+              <a class="nav-link showMobileDropdown" href="#">Services <i class="fas fa-angle-right ml-2" id="nested-dropdown-icon"></i> </a>
             </li>
             
-            <div id="mobile-dropdown" onmouseover="showMobileDropdown()" onmouseout="hideMobileDropdown()">
+            <div id="mobile-dropdown">
               <a class="dropdown-item mb-15" href="./service-display-advertising.html">Display Banners</a>
               <a class="dropdown-item mb-15" href="./service-native-advertising.html">Native Advertising</a>
               <a class="dropdown-item mb-15" href="./service-video-advertising.html">Video Advertising</a>
-              <a class="dropdown-item mb-15" href="./service-local-seo.html">Local SEO</a>
-              <a class="dropdown-item mb-15" href="./service-content-seo.html">Content SEO</a>
-              <a class="dropdown-item mb-15" href="./service-technical-seo.html">Technical SEO</a>
-              <a class="dropdown-item mb-15" href="./service-on-page-seo.html">On Page SEO</a>
+
+              <!-- nested dropdown start -->
+              <a class="nav-link nestedMobileDropdown" href="#">SEO <i class="fas fa-angle-right ml-2"></i> </a>
+              <div class="nested-mobile-dropdown" id="nested-mobile-dropdown">
+                <a class="dropdown-item mb-15" href="./service-local-seo.html">Local SEO</a>
+                <a class="dropdown-item mb-15" href="./service-content-seo.html">Content SEO</a>
+                <a class="dropdown-item mb-15" href="./service-technical-seo.html">Technical SEO</a>
+                <a class="dropdown-item mb-15" href="./service-on-page-seo.html">On Page SEO</a>
+              </div>
+              <!-- nested dropdown end -->
+
               <a class="dropdown-item mb-15" href="./service-native-advertising.html">Native Advertising</a>
               <a class="dropdown-item mb-15" href="./service-video-advertising.html">Video Advertising</a>
               <a class="dropdown-item mb-15" href="./service-search-ads.html">Search Ads</a>
