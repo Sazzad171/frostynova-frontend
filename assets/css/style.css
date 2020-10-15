@@ -1723,6 +1723,49 @@ footer .footer-bottom p, footer .footer-bottom a {
   border-top: 1px solid #d8d8d87d;
 }
 
+.contact-us-area {
+  background: url("../images/hero-ash-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-us-area .heading {
+  font-size: 50px;
+}
+
+.contact-us-area .contact-form {
+  background: url("../images/contact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 70px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-us-area .contact-form .form-control {
+  padding: 14px 20px;
+}
+
+.contact-us-area .contact-form .btn {
+  width: 50%;
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+
+.blog-details-area .date {
+  color: #050505 !important;
+}
+
+.blog-details-area p {
+  color: #262223;
+}
+
+.blog-details-area a {
+  color: #5386E5 !important;
+}
+
 /* mobile navigation start */
 .mobile-navigation {
   top: 0;
@@ -1893,6 +1936,16 @@ footer .footer-bottom p, footer .footer-bottom a {
     font-size: 14px;
     padding-right: 8px;
     padding-left: 8px !important;
+  }
+  .contact-us-area {
+    padding-top: 120px;
+  }
+  .contact-us-area .heading {
+    margin-bottom: 50px;
+    font-size: 44px;
+  }
+  .contact-us-area .contact-form {
+    padding: 40px 30px;
   }
 }
 
