@@ -1632,11 +1632,19 @@ footer {
 	.footer-middle {
 		margin-bottom: 20px;
 	}
-	.home-banner .heading {
-		font-size: 44px;
-		margin-bottom: 40px;
-		margin-top: 30px;
-		line-height: 60px;
+	.home-banner {
+		.pb-200 {
+			padding-bottom: 80px;
+		}
+		.pt-200 {
+			padding-top: 140px;
+		}
+		.heading {
+			font-size: 44px;
+			margin-bottom: 25px;
+			margin-top: 30px;
+			line-height: 60px;
+		}
 	}
 	.home-banner .title-label {
 		font-size: 14px;
@@ -1652,6 +1660,9 @@ footer {
 		.contact-form {
 			padding: 40px 30px;
 		}
+	}
+	.blog-full {
+		padding-top: 120px;
 	}
 }
 
